@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LOGO hardware="Logo7UDF">
+  <Properties>
+    <Creator>Siemens</Creator>
+    <Projectname>LOGO! Beispiele</Projectname>
+    <Installationname>Zykluszeitermittlung UDF</Installationname>
+    <Customer></Customer>
+    <Diagramno></Diagramno>
+    <Checked></Checked>
+    <Company></Company>
+    <Version>1.0.10</Version>
+    <Show>true</Show>
+    <Comments>
+
+
+
+
+   </Comments>
+    <Horizontal>1</Horizontal>
+    <Vertical>1</Vertical>
+    <History>
+      <DisplayedHistory>
+        <Date>1362150921491</Date>
+        <User>sh3665</User>
+        <Version>V7.0.32</Version>
+        <Comments></Comments>
+        <Saved>false</Saved>
+      </DisplayedHistory>
+      <DeletedHistory/>
+    </History>
+    <Zoom>100</Zoom>
+    <PageFormat>
+      <Margin>
+        <Left>28.0</Left>
+        <Top>28.0</Top>
+      </Margin>
+      <Imagesize>
+        <Height>785.0</Height>
+        <Width>538.0</Width>
+      </Imagesize>
+      <Paper>
+        <Height>842.0</Height>
+        <Width>595.0</Width>
+      </Paper>
+      <Orientation>0</Orientation>
+    </PageFormat>
+    <Password>03F59F0C9B9DD08C71E4C2E8DE759F4B</Password>
+  </Properties>
+  <UDFBlock guidValue="137828123165798" identifier="Scantime" comments="fa = Zyklen pro Sekunde fa = scans per seconds" version="1.0.10" blockNumber="0" inCounter="0" outCounter="0" validity="0">
+    <GuidList>
+      <Guid value="1375957624515" version="1.0.0"/>
+      <Guid value="137595837820446" version="1.0.1"/>
+      <Guid value="137595945483539" version="1.0.2"/>
+      <Guid value="137596266446461" version="1.0.3"/>
+      <Guid value="137596267357382" version="1.0.4"/>
+      <Guid value="137598120272128" version="1.0.5"/>
+      <Guid value="137821802389271" version="1.0.6"/>
+      <Guid value="137821812772171" version="1.0.7"/>
+      <Guid value="137821818773718" version="1.0.8"/>
+      <Guid value="137821823692632" version="1.0.9"/>
+      <Guid value="137828123165798" version="1.0.10"/>
+    </GuidList>
+    <Parameter>
+      <fa opcode="44" blockNumber="3" name="fa"/>
+    </Parameter>
+    <Blocks>
+      <Block opcode="3" blockNumber="2" name="">
+        <InConnector negate="false" opcode="16777344" blockNumber="24" index="0"/>
+      </Block>
+      <Block opcode="16777344" blockNumber="24" name="">
+        <InConnector negate="false" opcode="3" blockNumber="2" index="0"/>
+      </Block>
+      <Block opcode="44" blockNumber="3" name="">
+        <InConnector negate="false" opcode="16777344" blockNumber="24" index="0"/>
+        <Parameter index="1">
+          <Protection>false</Protection>
+          <On max="9999" min="0" incre="1">1000</On>
+          <Off max="9999" min="0" incre="1">0</Off>
+          <G_T isReference="false" lowMin="0" lowMax="99" highMin="0" highMax="99">16584</G_T>
+        </Parameter>
+      </Block>
+      <Block opcode="16777664" blockNumber="1" name="">
+        <InConnector negate="false" opcode="44" blockNumber="3" index="0"/>
+      </Block>
+      <InGroup/>
+      <OutGroup/>
+    </Blocks>
+  </UDFBlock>
+  <Figures>
+    <Figure type="5" position="1007,106">
+      <Content type="Dialog" style="0" size="12" color="-16777216">fa = Zyklen pro Sekunde fa = scans per seconds</Content>
+    </Figure>
+    <Figure type="0" area="169,106,818.0,703.0">
+      <InGroup/>
+      <OutGroup/>
+    </Figure>
+    <Figure type="1" opcode="44" blockNumber="3" position="656,254"/>
+    <Figure type="1" opcode="16777664" blockNumber="1" position="706,254"/>
+    <Figure type="2">
+      <Connector index="0" opcode="44" blockNumber="3" direction="0" type="0"/>
+      <Connector index="0" opcode="16777664" blockNumber="1" direction="1" type="0"/>
+      <Points>
+        <Point x="686" y="269"/>
+        <Point x="698" y="269"/>
+        <Point x="698" y="269"/>
+        <Point x="700" y="269"/>
+      </Points>
+    </Figure>
+    <Figure type="1" opcode="3" blockNumber="2" position="476,244"/>
+    <Figure type="1" opcode="16777344" blockNumber="24" position="546,244"/>
+    <Figure type="2">
+      <Connector index="0" opcode="16777344" blockNumber="24" direction="0" type="0"/>
+      <Connector index="0" opcode="44" blockNumber="3" direction="1" type="0"/>
+      <Points>
+        <Point x="576" y="259"/>
+        <Point x="632" y="259"/>
+        <Point x="632" y="259"/>
+        <Point x="650" y="259"/>
+      </Points>
+    </Figure>
+    <Figure type="2">
+      <Connector index="0" opcode="16777344" blockNumber="24" direction="0" type="0"/>
+      <Connector index="0" opcode="3" blockNumber="2" direction="1" type="0"/>
+      <Points>
+        <Point x="576" y="259"/>
+        <Point x="610" y="259"/>
+        <Point x="610" y="219"/>
+        <Point x="460" y="219"/>
+        <Point x="460" y="259"/>
+        <Point x="470" y="259"/>
+      </Points>
+    </Figure>
+    <Figure type="3" position="210,612">
+      <Content type="Dialog" style="0" size="10" color="-16777216">Siemens AG 
+Example Program without Liability 
+
+Warning: 
+Unsafe operating conditions can cause controllers to fail, resulting in unchecked operation of controlled devices. 
+Such hazardous events can cause death and/or serious injury and/or material damage.You must therefore provide an emergency stop
+ function and electric or other redundant safety devices that are independent of your automation system.
+
+Disclaimer of Liability: 
+Users are solely responsible for the correct operation of their LOGO! systems. This program does not relieve you of the obligation to observe
+safe practices during implementation, installation, operation, and maintenance. By using this example program created by Siemens AG, 
+you acknowledge that Siemens AG cannot under any circumstances be held liable for any possible personal injury or material damage
+resulting from the use of this program.</Content>
+    </Figure>
+    <Figure type="3" position="210,579">
+      <Content type="Dialog" style="1" size="12" color="-16777216">Warning and Disclaimer of Liability</Content>
+    </Figure>
+    <Figure type="3" position="210,547">
+      <Content type="Dialog" style="1" size="14" color="-65536">SIEMENS AG- Example Program </Content>
+    </Figure>
+    <Figure type="3" position="210,354">
+      <Content type="Dialog" style="0" size="10" color="-16777216">Siemens AG
+Programmbeispiel ohne Gewähr
+
+Warnung: 
+Steuerungen können bei unsicheren Betriebszuständen ausfallen und dadurch den unkontrollierten Betrieb der gesteuerten Geräte verursachen.Solche 
+gefährliche Ereignisse können zu tödlichen und/oder schweren Verletzungen und/oder Sachschaden führen.Sorgen Sie daher für eine NOT-AUS-Funktion, 
+elektrische oder andere redundante Sicherheitseinrichtungen, die von Ihrem Automatisierungssystem unabhängig sind.
+
+Haftungsausschluss:
+Jeder Anwender ist für den sachgemäßen Betrieb seines LOGO-Systems selbst verantwortlich. Dieses Programm enthebt Sie nicht der Verpflichtung zu sicherem 
+Umgang bei Anwendung, Installation, Betrieb und Wartung. Durch die Nutzung dieses von der Siemens AG erstellten Programm-Beispieles erkennen Sie an, daß 
+die Siemens AG unter keinen Umständen für möglicherweise infolge der Nutzung auftretende Sach- und/oder Personenschäden haftbar gemacht werden kann.</Content>
+    </Figure>
+    <Figure type="3" position="210,302">
+      <Content type="Dialog" style="1" size="14" color="-65536">SIEMENS AG- Beispielprogramm</Content>
+    </Figure>
+    <Figure type="3" position="210,331">
+      <Content type="Dialog" style="1" size="12" color="-16777216">Warnung und Haftungsausschluss</Content>
+    </Figure>
+    <Figure type="2">
+      <Connector index="0" opcode="3" blockNumber="2" direction="0" type="0"/>
+      <Connector index="0" opcode="16777344" blockNumber="24" direction="1" type="0"/>
+      <Points>
+        <Point x="506" y="259"/>
+        <Point x="530" y="259"/>
+        <Point x="530" y="259"/>
+        <Point x="540" y="259"/>
+      </Points>
+    </Figure>
+    <Figure type="3" position="312,136">
+      <Content type="Dialog" style="1" size="18" color="-16776961">Benutzerdefinierte Funktion (UDF): Ermittlung der Zykluszeit
+User defined function (UDF): Determining the cycle time</Content>
+    </Figure>
+  </Figures>
+</LOGO>
